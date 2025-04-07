@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rental Form</title>
+  <link rel="stylesheet" href="Style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="beranda.html">Home</a>
+    <a href="form.html" class="active">Book Now</a>
+  </nav>
+
+  <div class="form-container fade-in-up">
+    <h1>Motorcycle Rental Form</h1>
+    
+    <form id="rentalForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="motorcycle">Select Motorcycle:</label>
+      <select id="motorcycle" name="motorcycle" required>
+        <option value="">-- Choose --</option>
+        <option value="beat">Honda Beat</option>
+        <option value="nmax">Yamaha NMAX</option>
+        <option value="vario">Vario 150</option>
+      </select>
+
+      <label for="duration">Rental Duration (days):</label>
+      <input type="number" id="duration" name="duration" min="1" required>
+
+      <input type="submit" value="Book Now">
+    </form>
+  </div>
+
+</body>
+</html>
